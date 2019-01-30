@@ -51,7 +51,6 @@ namespace ConsoleApp1
             recogEngine.RecognizeAsync(RecognizeMode.Multiple);
 
             // Attach our hypothesizing / recognition events to the recognition engine.
-
             recogEngine.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(SpeechRecognized);
             recogEngine.SpeechHypothesized += new EventHandler<SpeechHypothesizedEventArgs>(SpeechHypothesizing);
             #endregion

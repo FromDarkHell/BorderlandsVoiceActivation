@@ -175,6 +175,9 @@ namespace ConsoleApp1
 
             dict.Add("talk", key.KeyChar.ToString().ToUpper());
             c.Add("talk");
+
+            Console.WriteLine("What is your \"Inventory\" key?");
+            key = Console.ReadKey();
             if (key.Key == ConsoleKey.Tab)
                 dict.Add("inventory", "{TAB}");
             else
