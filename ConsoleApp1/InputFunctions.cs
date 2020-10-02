@@ -69,6 +69,7 @@ namespace ConsoleApp1
         public static void sendKeystroke(string keys)
         {
             SendKeys.SendWait(keys);
+            //System.Threading.Thread.Sleep(2);
             SendKeys.Flush();
         }
 
